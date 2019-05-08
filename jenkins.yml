@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: update
+  - name: install apache2
     apt:
-      upgrade: yes
-      update-cache: yes
+      name: apache2
+      state: present
