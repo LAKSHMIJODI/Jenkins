@@ -6,9 +6,4 @@
     apt:
       name: tree
       state: present
-      groups: WebServer
-  - name: install tomcat
-    apt:
-      name: tomcat7
-      state: present
-      groups: Ubuntu
+      
