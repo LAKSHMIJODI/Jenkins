@@ -6,11 +6,3 @@
     apt:
       name: apache2
       state: absent
----
-- hosts: Ubuntu
-  become: yes
-  tasks:
-  - name: install tomcatt
-    apt:
-      name: tomcat
-      state: present
