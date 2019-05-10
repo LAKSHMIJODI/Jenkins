@@ -1,8 +1,14 @@
 ---
-- hosts: WebServer
+- hosts: all
   become: yes
   tasks:
   - name: install apache2
     apt:
       name: apache2
-      state: absent
+      state: present
+      groups: WebServer
+  - name: install apache2
+    apt:
+      name: apache2
+      state: present
+      groups: Ubuntu
