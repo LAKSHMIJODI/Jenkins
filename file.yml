@@ -6,5 +6,5 @@
     file: 
     - path: /c/Jenkins/1.txt
     - state: touch
-    - group: "WebServer"
+   
 
