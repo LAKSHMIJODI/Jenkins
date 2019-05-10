@@ -2,13 +2,13 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install apache2
+  - name: install tree
     apt:
-      name: apache2
+      name: tree
       state: present
       groups: WebServer
-  - name: install apache2
+  - name: install tomcat
     apt:
-      name: apache2
+      name: tomcat7
       state: present
       groups: Ubuntu
