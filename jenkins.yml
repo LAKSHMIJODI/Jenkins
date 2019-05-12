@@ -4,8 +4,8 @@
   tasks:
   - name: install packer
     apt:
-      name: tree
-      state: packer
+      name: packer
+      state: present
 ---
 - hosts: Ubuntu
   become: yes
