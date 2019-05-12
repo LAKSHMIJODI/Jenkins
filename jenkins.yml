@@ -6,7 +6,6 @@
     apt:
       name: packer
       state: present
----
 - hosts: Ubuntu
   become: yes
   tasks:
