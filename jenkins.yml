@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: WebServer
   become: yes
   tasks:
   - name: install tree
