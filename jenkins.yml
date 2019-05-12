@@ -2,9 +2,9 @@
 - hosts: WebServer
   become: yes
   tasks:
-  - name: install packer
+  - name: install tomcat
     apt:
-      name: packer
+      name: tomcat7
       state: present
 - hosts: Ubuntu
   become: yes
