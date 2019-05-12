@@ -2,8 +2,15 @@
 - hosts: WebServer
   become: yes
   tasks:
-  - name: install tree
+  - name: install packer
     apt:
       name: tree
+      state: packer
+---
+- hosts: Ubuntu
+  become: yes
+  tasks:
+  - name: install 
+    apt:
+      name: nodejs
       state: present
-      
